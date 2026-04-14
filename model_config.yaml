@@ -1,0 +1,90 @@
+models:
+  - name: "LogisticRegression C=0.01"
+    type: "LogisticRegression"
+    params:
+      C: 0.01
+      penalty: "l2"
+      solver: "lbfgs"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "LogisticRegression C=0.1"
+    type: "LogisticRegression"
+    params:
+      C: 0.1
+      penalty: "l2"
+      solver: "lbfgs"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "LogisticRegression C=1.0"
+    type: "LogisticRegression"
+    params:
+      C: 1.0
+      penalty: "l2"
+      solver: "lbfgs"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "LogisticRegression C=10.0"
+    type: "LogisticRegression"
+    params:
+      C: 10.0
+      penalty: "l2"
+      solver: "lbfgs"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "LogisticRegression L1 C=0.1 (liblinear)"
+    type: "LogisticRegression"
+    params:
+      C: 0.1
+      penalty: "l1"
+      solver: "liblinear"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "LogisticRegression L1 C=1.0 (liblinear)"
+    type: "LogisticRegression"
+    params:
+      C: 1.0
+      penalty: "l1"
+      solver: "liblinear"
+      max_iter: 1000
+      class_weight: "balanced"
+      random_state: 42
+
+  - name: "Ridge alpha=0.1"
+    type: "Ridge"
+    params:
+      alpha: 0.1
+
+  - name: "Ridge alpha=1.0"
+    type: "Ridge"
+    params:
+      alpha: 1.0
+
+  - name: "Ridge alpha=10.0"
+    type: "Ridge"
+    params:
+      alpha: 10.0
+
+  - name: "Lasso alpha=0.01"
+    type: "Lasso"
+    params:
+      alpha: 0.01
+
+  - name: "Lasso alpha=0.1"
+    type: "Lasso"
+    params:
+      alpha: 0.1
+
+  - name: "Lasso alpha=1.0"
+    type: "Lasso"
+    params:
+      alpha: 1.0
